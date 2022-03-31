@@ -1,0 +1,16 @@
+<svg id="rectangle" xmlns="http://www.w3.org/2000/svg" width="370" height="667" viewBox="0 0 370 667">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #3949ab;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="370" height="667"/>
+  <path class="cls-2" d="M865,416h370V594.405L865,625V416Z" transform="translate(-865 -416)"/>
+</svg>
