@@ -1,0 +1,857 @@
+body {
+	margin: 0 auto; 
+	max-width: 1400px;
+	font-family: 'Open Sans', sans-serif;
+}
+/** ilia's part**/
+ a{
+	 color: #000;
+	 text-decoration: none;
+ }
+
+ .I-Menu {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+ }
+
+ .I-Menu li{
+	font-size: 20px;
+	display: inline-block;
+	white-space: nowrap;
+	margin-right: 45px;
+	font-weight: 600;
+
+
+ }
+ .I-Menu li:hover{
+	
+	text-decoration: underline;
+
+ }
+ .I-Logo h2{
+	
+	font-size:25px;
+	margin-left: 110px;
+	margin-top: 47px;
+	margin-bottom: 55px;
+	margin-right: 300px;
+ }
+ 
+
+ .I-Banner{
+	height: 655px;
+	width: 1400px;
+	background-image: url("IliaImges/Banner.png");
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+
+ }
+ .I-Banner h1{
+	 margin: 0px;
+	 padding-top: 165px;
+	 text-align: center;
+	 color: #ffffff;
+	 font-size: 60px;
+	 
+ }
+ .I-Banner p{
+	 font-size: 22px;
+	 margin-top:15px;
+	 color: #ffffff;
+	 text-align: center;
+ }
+ .I-Btns{
+	 margin-top: 110px;
+	 margin-left:465px;
+	 padding: 0px;
+ }
+ .I-Btns button{
+	 border: 4px solid #ffffff;
+	 background: none;
+	 color: #ffffff;
+	 height: 70px;
+	 width: 220px;
+	 font-family: 'Roboto', sans-serif;
+	 font-size:20px;
+	 font-weight: 700;
+ }
+ .I-Btns button:hover{
+	border: 4px solid #00897b;
+	
+	background-color: #00897b;
+	transition: color 0.6s, border 0.6s, background-color 0.6s;
+}
+
+ .I-Btns li{
+	 display: inline-block;
+	 margin: 0px;
+	 margin-right:25px;
+	
+	  
+
+ } 
+ .fa-angle-down {
+	
+    color: #fff;
+    margin-left: 690px;
+    margin-top: 80px;
+	font-size: 25px;
+	
+}
+.fa-angle-down:hover {
+   text-decoration: underline;
+}
+.I-AboutUs-text{
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 120px;
+	text-align: center;
+}
+.I-aboutUs-h{
+	margin: 0px;
+	font-size: 30px;
+	font-weight: 700;
+	
+}
+.I-aboutUs-p{
+	display: inline-block;
+	width: 620px;
+	margin-top: 35px;
+	margin-bottom: 0px;
+}
+
+.I-AboutUs-flex {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 125px;
+	width: 1055px;
+	margin-left: 175px;
+	margin-bottom: 125px;
+}
+
+.I-AboutUs-content{
+	width: 255px;
+}
+.I-AboutUs-content h3{
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 37px;
+}
+.I-AboutUs-content p{
+	font-size: 15px;
+	font-weight: 400;
+	margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/** часть ромы**/
+
+.services h2 {
+	margin: 0;
+	font-weight: 400;
+}
+.services h3 {
+	margin: 0;
+	font-weight:600;
+}
+.services p {
+	margin: 0;
+	font-weight: 400;
+} 
+#services{
+	background-color: #e4fdf9;
+	height:1410px;
+}
+
+#workplace{
+	margin: 0px 25px 0px 115px;
+	padding: 0px 0px 120px 0px;
+}
+
+#inscription{
+	padding: 172px 357px 115px 267px;
+}
+#title_services{
+
+	font-size: 30px;
+	text-align: center;
+}
+#title_description{
+	margin-top: 36px; 
+	font-size: 15px;
+	text-align: center;
+}
+
+.block{
+	float:left; 
+	width: 370px;
+	height: 437px;
+	background-color: white;
+	margin: 0px 30px 30px 0px;
+}
+
+
+.phone-black {
+	margin-top: 59px;
+	margin-left: 157px; 
+}
+.phone-white {
+	display: none;
+	margin-top: 59px;
+	margin-left: 157px;
+}
+.block-title {
+	display: block;
+	text-align: center;
+	font-size: 20px; 
+	margin-top: 39px;
+	margin-bottom: 0px;
+}
+.block-text {
+	display: block;
+	margin-top: 25px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-size: 15px;
+	padding-left: 45px;
+	padding-right: 45px;
+}
+
+.button-read {
+	display: block;
+	border: 2px solid black;
+	padding: 20px;
+	background: none;
+	margin-top: 45px;
+	margin-left: 110px;
+	font-size: 20px;
+	font-weight: 600;
+
+}
+.block:hover{
+	background-color: #00897b;
+}
+.block:hover > .phone-black {
+	display: none;
+}
+.block:hover > .phone-white {
+	display: flex;	
+}
+.block:hover > .block-title {
+	color: white;
+}
+.block:hover > .block-text {
+	color: white;
+}
+.block:hover > .button-read {
+	color: white;
+	border-color: white;
+}
+
+#latest-works{
+	height: 1616px;
+}
+
+.title-works {
+	margin-top: 128px;
+	text-align: center;
+	font-size: 30px; 
+}
+.works-description {
+	margin-top: 36px;
+	text-align: center;
+	font-size: 15px;
+}
+.works-buttons {
+	padding-top: 118px;
+	padding-left: 358px;
+}
+
+.work-button-all {
+	float: left;
+	background-color: white;
+	border: 2px solid #00897b;
+	font-size: 20px;
+	height: 55px;
+	width: 100px;
+	text-align: center;
+	font-weight: 600;
+
+
+}
+.work-button-all:hover {
+	background-color: #00897b;
+	color: white
+}
+.work-button {
+	float: left;
+	background-color: white;
+	border: 2px solid #00897b;
+	font-size: 20px;
+	height: 55px;
+	width: 180px;
+	text-align: center;
+	margin-left: 20px;
+	font-weight: 600;
+
+
+}
+.work-button:hover {
+	background-color: #00897b;
+	color: white
+}
+
+.works-pictures {
+	padding-top: 90px;
+	padding-left: 86px;
+}
+
+.work-picture {
+	float: left;
+	margin-left: 29px;
+	margin-top: 30px;
+}
+
+.text-image {
+	position	: relative;
+	width		: 100%;
+}
+.watch {
+	position : absolute;
+	top: 180px;
+	left: 150px;
+    color :#fff;
+    font-weight: 600;
+    font-size: 20px;	
+}
+.design {
+	top: 200px;
+	left: 170px;
+	font-weight: 400;
+	font-size: 15px;
+}
+.last-button {
+	margin-top: 129px;
+	margin-left: 590px;
+	height: 70px;
+	width: 220px;
+	background: white;
+	border: 2px solid #00897b;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600; 
+}
+.last-button:hover {
+	background: #00897b;
+	color: white;
+	
+}
+ 
+
+
+
+
+
+
+
+
+
+
+/** vanya part**/
+/* fonts */
+@font-face {
+	font-family: OpenSans Bold;
+	src: url(fonts1/Open_Sans/static/OpenSans/OpenSans-Bold.ttf);
+}
+@font-face {
+	font-family: OpenSans Regular;
+	src: url(fonts1/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+}
+@font-face {
+	font-family: OpenSans Light;
+	src: url(fonts1/Open_Sans/static/OpenSans/OpenSans-Light.ttf);
+}
+@font-face {
+	font-family: OpenSans Semibold;
+	src: url(fonts1/Open_Sans/static/OpenSans/OpenSans-SemiBold.ttf);
+}
+
+/* spacing page 5 */
+.v-spacing-p5 {
+	background: #f0f1f1; 
+	padding: 125px 115px;   
+}
+
+/* main text page 5 */
+
+.v-main-text-p5 h2, h5{
+	font-family: OpenSans Bold; 
+	font-size: 30px; 
+	text-align: center;
+	margin: 0;  
+}
+p.v-under-main-text-p5{
+	display: block ;
+	font-family: OpenSans Regular; 
+	font-size: 15px; 
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 38px;
+	margin-bottom: 134px; 
+	width: 630px;
+}
+p.v-under-main-text-p6{
+	display: block ;
+	font-family: OpenSans Regular; 
+	font-size: 15px; 
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 38px;
+	margin-bottom: 134px; 
+	width: 630px;
+}
+
+/* main text page 5 */
+
+/*price list page 5*/
+
+/*all prices class*/
+.v-all-containers {
+	display: flex;
+	justify-content: space-between;
+}
+/*all prices*/
+
+/*single price*/
+.v-container-p5 {
+	background-image: url(images/rectangle.svg);
+	width: 370px; 
+	height: 667px; 
+}
+/*single price*/
+.v-container-p5:hover {
+	box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.35);
+    transition: box-shadow 0.5s;
+}
+
+h4.v-header-p5{
+	text-align: center;
+	font-family: OpenSans Regular;
+	margin: 0;
+	color: white;
+	font-size: 25px;
+	margin-top: 35px ;
+	font-weight: 400;
+}
+p.v-price-p5{
+	text-align: center;
+	font-family: OpenSans Regular; 
+	font-size: 50px;
+	color: white;
+	margin: 0;
+	margin-top: 15px;
+	margin-bottom: 100px;
+	font-weight: 400;
+
+}
+span.v-month-p5{
+	font-family: OpenSans Regular;
+	font-size: 17px;
+	font-weight: 400;
+}
+sup.v-dollar-p5{
+	font-size: 25px;
+	font-weight: 400;
+}
+p.v-options-p5{
+	text-align: center;
+	font-family: OpenSans Light; 
+	font-size: 17px;
+	margin: 0;
+}
+hr.v-line-p5{
+	width: 180px;
+	margin-bottom: 32px;
+	margin-top: 13px;
+
+
+}
+.v-btn{
+	border: 2px solid #000;
+   	background: none;
+   	color: #000;
+   	height: 60px;
+   	width: 180px;
+   	font-family: 'Roboto', sans-serif;
+   	font-size:20px;
+   	font-weight: 700;
+   	margin-left: 95px;
+   	margin-top: 21px;
+}
+.v-btn:hover{
+	border: none;
+   	background: #00897B;
+   	color: #FFF;
+   	height: 60px;
+   	width: 180px;
+   	font-family: 'OpenSans Semibold', sans-serif;
+   	font-size:20px;
+   	font-weight: 700;
+   	margin-left: 95px;
+   	transition: color 0.6s, border 0.6s, background-color 0.6s;
+
+}
+
+/*price list page 5*/
+
+/* spacing page 6 */
+.v-spacing-p6 {
+	background: #FFF; 
+	padding: 123px 115px;   
+}
+.v-container1-p6 {
+	background-image: url(images/Firstman.png);
+	width: 370px; 
+	height: 320px;
+	margin: 0;
+	margin-bottom: 39px;
+}
+.v-container2-p6 {
+	background-image: url(images/secondman.png);
+	width: 370px; 
+	height: 320px;
+	margin: 0;
+	margin-bottom: 39px; 
+}
+.v-container3-p6 {
+	background-image: url(images/thirdman.png);
+	width: 370px; 
+	height: 320px;
+	margin: 0;
+}
+p.v-name-p6{
+	font-family: OpenSans Semibold;
+	font-size: 20px;
+	margin: 0;
+	margin-top: 359px;
+	margin-bottom: 17px;
+	text-align: center;
+}
+p.v-workpos-p6{
+	font-family: OpenSans Regular;
+	font-size: 15px;
+	margin: 0;
+	margin-bottom: 33px;
+	text-align: center;
+}
+.v-all-containers-icons {
+	margin-left: 50px;
+	justify-content: space-between;
+	
+}
+/*.v-all-containers-icons:hover {
+	border: none;
+   	background: #00897B;
+   	color: #FFF;
+   	height: 60px;
+   	width: 180px;
+   	font-family: 'OpenSans Semibold', sans-serif;
+   	font-size:20px;
+   	font-weight: 700;
+   	margin-left: 95px;
+   	transition: color 0.6s, border 0.6s, background-color 0.6s;
+}*/ 
+.team__icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 126px;
+}
+
+.team__icons-link {
+    text-decoration: none;
+}
+i {
+    color: #00897b;
+}
+.link__ico:hover {
+    background: #3949ab;
+    transition: background 0.6s;
+}
+
+.link__ico:hover > .fa-xl {
+    color: #FFF;
+    transition: color 0.6s;
+}
+.link__ico {
+    border: 2px solid #f0f1f1;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.v-circles-p6 {
+	margin: 0;
+	margin-top: 274px;
+	display: flex;
+    justify-content: center;
+    text-align: center;
+}
+p.v-circle-p6 {
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+    background: #00897b;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.v-circle-p6:last-child{
+	margin-right: 0;
+}
+.v-circle-p6:hover {
+    background: #3949ab;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**danik part**/
+@font-face {
+    font-family: OpenSans semibold;
+    src: url(fonts/static/OpenSans/OpenSans-SemiBold.ttf);
+
+}
+
+.d-back{
+    background-color:#E4FDF9;
+}
+.d-spacing-p7{
+    margin: 0px 115px 0px 115px;
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+.d-blog-heading {
+    text-align: center;
+    margin-left: 270px;
+    margin-bottom: 123px;
+    height: 96px;
+    width: 630px;
+}
+.d-blog-heading h2 {
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+.d-blog-heading p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+
+.d-seo{
+    display: inline-flex;
+}
+.d-seo img{
+    max-width: 48%;
+}
+.d-seo h2{
+    margin-top: 38px;
+    margin-left: 29px;
+    margin-right: 200px;
+    display: inline-flex;
+    font-family: OpenSans Semibold;
+    font-size: 25px;
+}
+.d-seo h2:hover{
+    color: #00897B;
+    cursor: pointer;
+}
+.icon{
+    display: inline-flex;
+    margin-left: 29px;
+}
+.icon p {
+    margin: 0 0 0 15px;
+    font-size: 17px;
+    font-family: OpenSans Semibold;
+}
+.qwe{
+    margin-left: 30px;
+    margin-right: 80px;
+    width: 450px;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.d-button{
+    text-align: center;
+}
+.d-button input{
+    border-width: 3px;
+    border-color: black;
+    background-color: #E4FDF9; 
+    color:black;
+    margin-top: 120px;
+    WIDTH: 220px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 22px;
+    cursor:pointer;
+}
+.d-button input:hover{
+    background-color: #00897B;
+    color: white;
+    border: none;
+    height: 73px;
+}
+.d-button input:active {
+    transform: translateY(4px);
+}
+
+.back{
+    z-index: -1;
+    position: absolute;
+}
+.imag{
+    max-width: 100%;
+}
+.d-spacing-p8{
+    padding-top: 83px;
+    padding-left: 115px;
+    padding-right: 115px;
+}
+.d-blog-heading2{
+    text-align: center;
+    color: white;
+    margin-left: 270px;
+    margin-bottom: 109px;
+    height: 96px;
+    width: 630px;
+}
+.d-blog-heading2 h2{
+    font-weight: bold;
+	font-size: large;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.d-blog-heading2 p{
+    font-weight:400;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+}
+.d-rounds {
+    display: flex;
+    text-align: center;
+    margin-left: 180px;
+    justify-content: space-between;
+    width : 830px;
+    height: 107px;
+}
+.d-rounds i{
+    padding: 30px;
+    border-radius: 140px;
+    background-color: #3949ab;
+    color: white;
+}
+.d-under-rounds{
+    display: flex;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 100px;
+    justify-content: space-between;
+    width : 970px;
+}
+.d-under-rounds p{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    width: 250px;
+    font-family: OpenSans semibold;
+    font-size: 20px;
+}
+
+.d-blank{
+    margin-top: 80px;
+    text-align: center;
+}
+.in{
+    display: flex;
+    justify-content: space-between;
+    width: 1030px;
+    margin-left: 70px;
+}
+
+.d-blank input{
+    font-family: OpenSans semibold;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 500px;
+    height: 85px;
+    border: 0px;
+    padding: 0px;
+}
+.d-blank textarea{
+    font-family: OpenSans semibold;
+    font-size: 20px;
+    margin-top: 30px;
+    width: 1030px;
+    height: 325px;
+    border-radius: 10px;
+    border: 0px;
+    padding: 0px;
+}
+
+.d-button2{
+    float: right;
+    text-align: center;
+}
+.d-button2 input{
+    border-radius: 15px;
+    border: none;
+    background-color: white; 
+    color:black;
+    margin-right: 70px;
+    margin-top: 38px;
+    WIDTH: 220px;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 22px;
+    cursor:pointer;
+}
+.d-button2 input:active {
+    transform: translateY(4px);
+
+}
+
+footer p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 240px;
+	margin-bottom: 50px;
+}
+ 
+ 
+
+ 
