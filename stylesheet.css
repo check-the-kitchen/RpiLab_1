@@ -182,11 +182,17 @@ body {
 #workplace{
 	margin: 0px 25px 0px 115px;
 	padding: 0px 0px 120px 0px;
+	display: inline-block;
+	text-align: center;
 }
 
-#inscription{ /* Убрал большие боковые padding*/
-	padding-top: 172px;
-	padding-bottom: 115px;
+.inscription{ /* Убрал большие боковые padding*/
+	margin-top: 172px;
+	margin-bottom: 115px;
+	display: inline-block;
+	text-align: center;
+	width: 625px;
+	
 
 }
 #title_services{
