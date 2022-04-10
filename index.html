@@ -33,14 +33,14 @@
             <h1>Web development project</h1>
             <p>Very suitable to support all web development projects</p>
             <div>
-			<form action="index.html">
                 <ul class="I-Btns">
                 	<li><button>OUR SERVICES</button></li>
                 	<li><button>HIRE IS NOW</button></li>
                 </ul>
-			</form>
             </div>
-			<i class="fa-solid fa-angle-down"></i>
+			<div class="arrow">
+				<i class="fa-solid fa-angle-down"></i>
+			</div>
         </div>
 	</article>
 
@@ -129,7 +129,7 @@
 		</section>
 	</article>
 
-	<!-- 1 page -->
+	<!-- 4 page -->
 	<article>
 		<section id="latest-works">
 			<h2 class="title-works">Latest Works</h2>
@@ -152,12 +152,14 @@
 				<img src="images/bottle.png" class="work-picture">
 				<img src="images/bag.png" class="work-picture">
 			</div>
+			<div class="R-btn">
 			<button class="last-button">VIEW ALL</button>
+		</div>
 		</section>
 		
 	</article>
 
-	<!-- 1 page -->
+	<!-- 5 page -->
 	<article>
 		<div class="v-spacing-p5">
 			<div class="v-main-text-p5">
@@ -174,11 +176,9 @@
   					<p class= "v-options-p5"> 5 Free Projects</p><hr class= "v-line-p5">
   					<p class= "v-options-p5"> PHP 5 Enabled</p><hr class= "v-line-p5">
   					<p class= "v-options-p5"> 24/7 Suports</p><hr class= "v-line-p5">
-  					<form action="index.html">
   						<button class= "v-btn">
   							ORDER NOW
   						</button>
-  					</form>	
   				</div>
 
   				<div class= "v-container-p5">
@@ -188,11 +188,9 @@
   					<p class= "v-options-p5"> 5 Free Projects</p><hr class= "v-line-p5">
   					<p class= "v-options-p5"> PHP 5 Enabled</p><hr class= "v-line-p5">
   					<p class= "v-options-p5"> 24/7 Suports</p><hr class= "v-line-p5">
-  					<form action="index.html">
   						<button class= "v-btn">
   							ORDER NOW
   						</button>
-  					</form>		
   				</div>
 
   				<div class= "v-container-p5">
@@ -202,17 +200,17 @@
   					<p class= "v-options-p5"> 5 Free Projects</p><hr class= "v-line-p5">
   					<p class= "v-options-p5"> PHP 5 Enabled</p><hr class= "v-line-p5">
   					<p class= "v-options-p5"> 24/7 Suports</p><hr class= "v-line-p5">
-  					<form action="index.html">
+  					
   						<button class= "v-btn">
   							ORDER NOW
   						</button>
-  					</form>		
+  					
   				</div>
 			</div>
 		</div>
 	</article>
 
-	<!-- 1 page -->
+	<!-- 6 page -->
 	<article>
 		<div class="v-spacing-p6">
 			<div class="v-main-text-p5">
@@ -221,7 +219,10 @@
 					
 			</div>
 			<div class="v-all-containers">
-				<div class= "v-container1-p6">
+				<!--изменил класс v-container-№-p6 на v-team-card-->
+				<div class= "v-team__card">
+					<!--добавил картинкой-->
+					<img src="images/Firstman.png" alt="John">
 					<p class= "v-name-p6">
 						John Doe
 					</p>
@@ -252,7 +253,10 @@
 	                    </a>
 	                </div>
 				</div>
-				<div class= "v-container2-p6">
+				<!--изменил класс v-container-№-p6 на v-team-card-->
+				<div class= "v-team__card">
+					<!--добавил картинкой-->
+					<img src="images/secondman.png" alt="Alexa">
 					<p class= "v-name-p6">
 						Alexa Biru
 					</p>
@@ -282,7 +286,10 @@
 	                    </a>
 	                </div>
 				</div>
-				<div class= "v-container3-p6">
+				<!--изменил класс v-container-№-p6 на v-team-card-->
+				<div class= "v-team__card">
+					<!--добавил картинкой-->
+					<img src="images/thirdman.png" alt="Ronobir">
 					<p class= "v-name-p6">
 						Ronobir Sing
 					</p>
@@ -321,7 +328,7 @@
 		</div>	
 	</article>
 
-	<!-- 1 page -->
+	<!-- 7 page -->
 	<article>
 		<div class="d-back">
 			<div class="d-spacing-p7">
@@ -417,14 +424,12 @@
 						</p>
 					</div>
 				</div>
-				<div class="d-button"> 
-					<input type="button" value = "MORE VIEW">
-				</div>
+				<input class="d-button" type="button" value = "MORE VIEW">
 			</div>
 		</div>
 	</article>
 
-	<!-- 1 page -->
+	<!-- 8 page -->
 	<article>
 		<div class="back">
 			<img class="imag" src="images\rawpixel-com-252127.png">
@@ -447,15 +452,16 @@
 			</div>
 			<form>
 			    <div class="d-blank">
-				    <div class="in">
-					    <input type="text" placeholder= "  Your NAME" required>
-					    <input type="email" placeholder= "  Your Email" required>
+				    <div class="inp">
+						<input class="in" type="text" placeholder= "  Your NAME" required>
+					    <input class="in" type="email" placeholder= "  Your Email" required>
 			     	</div>
 				    <textarea cols="30" rows="5" placeholder= "  Write Message" required></textarea >	
-			    </div>
-			    <div class="d-button2">
-				    <input type="submit" value="SEND">
-			    </div>
+					<input class="d-button2" type="submit" value="SEND">
+				</div>
+			   
+				   
+			    
 		    </form>
 		</div> 
 	</article>
