@@ -135,7 +135,7 @@
 					<!-- Модальное окно -->
 					<!-- Обработка модального окна -->
 					<script>
-						var modal = document.getElementById("rmodal");
+						var modal1 = document.getElementById("rmodal");
 	
 			
 						var btn = document.getElementById("myBtn");
@@ -144,20 +144,20 @@
 						var span = document.getElementsByClassName("close")[0];
 	
 						function Showmodal(mtitle) {
-							modal.style.display = "block";
+							modal1.style.display = "block";
 							p1 = document.getElementsByClassName("modal-title")[0];
 							p1.textContent = mtitle;
 							document.body.classList.add('locked');
 						}
 						span.onclick = function() {
 							document.body.classList.remove('locked');
-							  modal.style.display = "none";
+							  modal1.style.display = "none";
 						}
 	
 						window.onclick = function(event) {
 						  if (event.target == modal) {
 							  document.body.classList.remove('locked');
-							modal.style.display = "none";
+							modal1.style.display = "none";
 						  }
 						}
 					</script>
