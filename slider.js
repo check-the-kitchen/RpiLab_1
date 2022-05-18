@@ -1,55 +1,85 @@
-// Slider
+   function writeCookie(name, val, expires) {
+        var date = new Date;
+        date.setDate(date.getDate() + expires);
+        document.cookie = name+"="+val+"; path=/; expires=" + date.toUTCString();
+    }
 
-    let offset = 0;
-    let slideIndex = 0;
-    
+    function readCookie(name) {
+        var matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
 
-    const slides = document.querySelectorAll('.slide'),
-        slidesWrapper = document.querySelector('.slider-wrapper'),
-        width = window.getComputedStyle(slidesWrapper).width,
-        slidesField = document.querySelector('.slider-inner');
-    let circles = document.querySelectorAll('.v-circle-p6');
-    circles = Array.from(circles);
-    
-    slidesField.style.width = 1300  + 'px';
-    slidesField.style.display = 'flex';
-    slidesField.style.transition = '0.5s all';
+    let position;
+    if (document.cookie.split(';').filter((item) => item.trim().startsWith('position=')).length) {
+        position = readCookie('position');
+    }
+    else position = 0;
 
-    slidesWrapper.style.overflow = 'hidden';
+    const slidesToShow = 1;
+    const slidesToScroll = 1;
+    const container = document.querySelector(`.slider-container`);
+    const track = document.querySelector('.slider-track');
+    const item = document.querySelector('.slider-item');
 
-    slides.forEach(slide => {
-        slide.style.width = width;
+    const btnPrev = document.querySelector('.btn-prev');
+    const btnNext = document.querySelector('.btn-next');
+
+    const itemWidth = container.clientWidth / slidesToShow;
+    const movePosition = slidesToScroll * itemWidth;
+    const items = document.querySelectorAll('.slider-item');
+    console.log(items);
+    const itemCount = items.length;
+
+    const dotHolder = document.querySelector('.slider-dot-holder');
+
+    var curItem = ( - position ) / itemWidth;
+
+
+    items.forEach((item) => {
+       item.style.minWidth = `${itemWidth}px`;
     });
-    window.addEventListener("load",function(){
-        offset = localStorage.getItem('Offset');
-        slideIndex = localStorage.getItem('Index');
-        slidesField.style.transform = `translateX(-${offset}px)`;
-        circles[slideIndex].classList.add('active');
-        if(offset > 800) {
-            offset = 0;
-        }
-    });
-    
-    setInterval(() => {
-        offset = Number(offset);
-        if (offset == (Number(width.slice(0, width.length - 2) * (slides.length - 1)))) {
-            offset = 0;
-        } else {
-            offset += Number(width.slice(0, width.length - 2));
-        }
-        localStorage.setItem('Offset', offset);
-        slidesField.style.transform = `translateX(-${offset}px)`;
 
-        if (slideIndex == (slides.length - 1)) {
-            slideIndex = 0;
-        } else {
-            slideIndex++;
-        }
-        for (i = 0; i < circles.length; i++) {
-            circles[i].className = circles[i].className.replace(" active", "");
-        }
-        circles[slideIndex].className += " active";
-        localStorage.setItem('Index', slideIndex);
-    }, 5000);
 
-    
+    const setPosition = () => {
+
+        if ( position <= - ( container.clientWidth * itemCount ) )
+            position = 0;
+        if ( position > 0 )
+            position = - ( container.clientWidth * ( itemCount - 1 ) );
+
+        track.style.transform = `translateX(${position}px)`;
+        curItem = ( - position ) / itemWidth;
+        writeCookie('position', `${position}`, 30);
+    };
+
+    setPosition();
+
+
+    const setDots = () => {
+
+        while ( dotHolder.hasChildNodes() )
+        {
+            dotHolder.removeChild( dotHolder.childNodes[0] );
+        }
+
+        for ( let i = 0; i < itemCount; i++ )
+        {
+            const dot = document.createElement("div");
+            dot.classList.add('slider-dot');
+            if ( i === curItem )
+                dot.style.backgroundColor = "#3949ab";
+            else
+                dot.style.backgroundColor = "#00897b";
+            dotHolder.appendChild(dot);
+        }
+    }
+
+    let timerId = setInterval( () => {
+        position -= movePosition;
+        setPosition();
+        setDots();
+    }, 7000);
+
+    setDots();

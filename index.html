@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<!-- <link href = "style_modal_KJI0YH.css"			rel="stylesheet" type="text/css"> -->
 	<title>Lab1 variant-3</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -124,9 +125,9 @@
 					</div>
 					<!-- Модальное окно -->
 					<div id="rmodal" class="rmodal"> 
-						<div class="modal-content">
+						<div class="r-modal-content">
 							<h2 class="modal-title"></h2>
-							<span class="close">&times;</span>
+							<span class="r-close">&times;</span>
 							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum sapien vitae nibh tincidunt, vel tempor urna consectetur. Cras finibus mauris dictum sapien ornare semper. Donec vel tortor in tellus aliquam vestibulum vel id nulla. Vestibulum quis mi sed velit porttitor porttitor. Aliquam dapibus, nibh in commodo eleifend, quam urna aliquet nisl, at tempus velit sem in justo. Vestibulum bibendum tincidunt nibh, ac condimentum diam consectetur in. Nulla nisi elit, interdum commodo felis non, egestas facilisis nisi. In vitae felis risus..</p>
 							<p>	Fusce vestibulum tincidunt lectus, vitae sagittis nisl semper vel. Mauris a lorem ullamcorper, placerat lacus eu, cursus orci. Duis sit amet elementum nulla, a dictum felis. Aenean sodales vitae quam ut efficitur. Quisque at dui semper, auctor ligula ac, posuere turpis. Fusce mattis pretium erat eget varius. Aenean at pharetra libero, eget eleifend felis. Etiam dictum sapien nec mauris efficitur faucibus.</p>
 							<p>	Nullam at elementum nisl. Nulla sed massa ullamcorper, laoreet massa nec, mollis massa. Proin molestie auctor vulputate. Integer id imperdiet ante, nec maximus sapien. Nunc blandit est felis, eget sagittis mauris volutpat at. Integer non volutpat nibh. Vestibulum volutpat interdum diam eget ultrices. Duis ullamcorper accumsan erat, sed lobortis metus consectetur eget. Vestibulum at sem id purus elementum.</p>
@@ -136,12 +137,13 @@
 					<!-- Обработка модального окна -->
 					<script>
 						var modal1 = document.getElementById("rmodal");
-	
+						
+						
 			
-						var btn = document.getElementById("myBtn");
+						var btn1 = document.getElementById("myBtn");
 	
 						
-						var span = document.getElementsByClassName("close")[0];
+						var span = document.getElementsByClassName("r-close")[0];
 	
 						function Showmodal(mtitle) {
 							modal1.style.display = "block";
@@ -154,12 +156,12 @@
 							  modal1.style.display = "none";
 						}
 	
-						window.onclick = function(event) {
+						 rmodal.onclick = function(event) {
 						  if (event.target == modal1) {
 							  document.body.classList.remove('locked');
 							modal1.style.display = "none";
 						  }
-						}
+						} 
 					</script>
 					<!-- Обработка модального окна -->я
 	
@@ -216,7 +218,7 @@
   					<p class= "v-options-p5"> 5 Free Projects</p><hr class= "v-line-p5">
   					<p class= "v-options-p5"> PHP 5 Enabled</p><hr class= "v-line-p5">
   					<p class= "v-options-p5"> 24/7 Suports</p><hr class= "v-line-p5">
-					  <button  class= "v-btn" id="00perMonth" onclick="onOrderBtnClick(event)">
+					  <button  class= "v-btn">
 						ORDER NOW
 					</button>
   				</div>
@@ -228,7 +230,7 @@
   					<p class= "v-options-p5"> 5 Free Projects</p><hr class= "v-line-p5">
   					<p class= "v-options-p5"> PHP 5 Enabled</p><hr class= "v-line-p5">
   					<p class= "v-options-p5"> 24/7 Suports</p><hr class= "v-line-p5">
-					  <button  class= "v-btn" id="50perMonth" onclick="onOrderBtnClick(event)">
+					  <button  class= "v-btn" >
 						ORDER NOW
 					</button>
   				</div>
@@ -241,7 +243,7 @@
   					<p class= "v-options-p5"> PHP 5 Enabled</p><hr class= "v-line-p5">
   					<p class= "v-options-p5"> 24/7 Suports</p><hr class= "v-line-p5">
   					
-					  <button  class= "v-btn" id="99perMonth" onclick="onOrderBtnClick(event)">
+					  <button  class= "v-btn">
 						ORDER NOW
 					</button>
   					
@@ -251,335 +253,160 @@
 	</article>
 
 	<!-- 6 page -->
-	<article>
-		<div class="v-spacing-p6">
-			<div class="v-main-text-p5">
-				<h5>Our Team Member</h5>
-				<p class= "v-under-main-text-p6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>	
-					
-			</div>
-			<div class="v-all-containers">
-				<!--утроил KEKW-->
-				 <div class="slider">
-                    <div class="slider-wrapper">
-                        <div class="slider-inner">
-                            <div class="slide">
-								<!--изменил класс v-container-№-p6 на v-team-card-->
-								<div class= "v-team__card">
-									<!--добавил картинкой-->
-									<img src="images/Firstman.png" alt="John">
-									<p class= "v-name-p6">
-										John Doe
-									</p>
-									<p class= "v-workpos-p6">
-										General Manager
-									</p>
-									
-									<div class="team__icons">
-					                    <a href="#" class="team__icons-link">
-					                        <div class="facebook link__ico">
-					                            <i class="fa-brands fa-facebook-f fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="twitter link__ico">
-					                            <i class="fa-brands fa-twitter fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="message link__ico">
-					                            <i class="fa-solid fa-comments fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="dribble link__ico">
-					                            <i class="fa-brands fa-dribbble fa-xl"></i>
-					                        </div>
-					                    </a>
-					                </div>
-								</div>
-								<!--изменил класс v-container-№-p6 на v-team-card-->
-								<div class= "v-team__card">
-									<!--добавил картинкой-->
-									<img src="images/secondman.png" alt="Alexa">
-									<p class= "v-name-p6">
-										Alexa Biru
-									</p>
-									<p class= "v-workpos-p6">
-										Office Director
-									</p>
-								    <div class="team__icons">
-					                    <a href="#" class="team__icons-link">
-					                        <div class="facebook link__ico">
-					                            <i class="fa-brands fa-facebook-f fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="twitter link__ico">
-					                            <i class="fa-brands fa-twitter fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="message link__ico">
-					                            <i class="fa-solid fa-comments fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="dribble link__ico">
-					                            <i class="fa-brands fa-dribbble fa-xl"></i>
-					                        </div>
-					                    </a>
-					                </div>
-								</div>
-								<!--изменил класс v-container-№-p6 на v-team-card-->
-								<div class= "v-team__card">
-									<!--добавил картинкой-->
-									<img src="images/thirdman.png" alt="Ronobir">
-									<p class= "v-name-p6">
-										Ronobir Sing
-									</p>
-									<p class= "v-workpos-p6">
-										Admin
-									</p>
-									<div class="team__icons">
-					                    <a href="#" class="team__icons-link">
-					                        <div class="facebook link__ico">
-					                            <i class="fa-brands fa-facebook-f fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="twitter link__ico">
-					                            <i class="fa-brands fa-twitter fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="message link__ico">
-					                            <i class="fa-solid fa-comments fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="dribble link__ico">
-					                            <i class="fa-brands fa-dribbble fa-xl"></i>
-					                        </div>
-					                    </a>
-					                </div>
+	<section class = "TeamMembers" id = "OurTeamMembers-anchor">
+		<div Class = "TeamMembersContent">
+			<h2>Our Team Member</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+		</div>
+
+		<div class="slider-wrapper">
+			<div class="slider-container">
+				<div class="slider-track">
+
+					<div class="slider-item">
+							<div class = "TeamMembersContainer">
+								<div class = "TeamMemberInfo">
+
+									<!-- Jhon Doe -->
+									<div class = "TeamMembersBox">
+										<img src="images/Firstman.png" alt="Jhon Doe">
+										<p class = "TeamMemberName">John Doe<p>
+										<p class = "TeamMemberPost">General Manager<p>
+										<div class = "TeamMembersIconContainer">
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-facebook-f fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-twitter fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-comments fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-globe fa-2x" aria-hidden="true"></i></div></a>
+										</div>
+									</div>
+
+									<!-- Alexa Biru -->
+									<div class = "TeamMembersBox">
+										<img src="images/secondman.png" alt="Alexa Biru">
+										<p class = "TeamMemberName">Alexa Biru<p>
+										<p class = "TeamMemberPost">Office Director<p>
+										<div class = "TeamMembersIconContainer">
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-facebook-f fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-twitter fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-comments fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-globe fa-2x" aria-hidden="true"></i></div></a>
+										</div>
+									</div>
+
+									<!-- Ronobir Sing -->
+									<div class = "TeamMembersBox">
+										<img src="images/thirdman.png" alt="Ronogir Sing">
+										<p class = "TeamMemberName">Ronogir Sing<p>
+										<p class = "TeamMemberPost">Admin<p>
+										<div class = "TeamMembersIconContainer">
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-facebook-f fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-twitter fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-comments fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-globe fa-2x" aria-hidden="true"></i></div></a>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="slide">
-								<!--изменил класс v-container-№-p6 на v-team-card-->
-								<div class= "v-team__card">
-									<!--добавил картинкой-->
-									<img src="images/Firstman.png" alt="John">
-									<p class= "v-name-p6">
-										John Doe
-									</p>
-									<p class= "v-workpos-p6">
-										General Manager
-									</p>
-									
-									<div class="team__icons">
-					                    <a href="#" class="team__icons-link">
-					                        <div class="facebook link__ico">
-					                            <i class="fa-brands fa-facebook-f fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="twitter link__ico">
-					                            <i class="fa-brands fa-twitter fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="message link__ico">
-					                            <i class="fa-solid fa-comments fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="dribble link__ico">
-					                            <i class="fa-brands fa-dribbble fa-xl"></i>
-					                        </div>
-					                    </a>
-					                </div>
-								</div>
-								<!--изменил класс v-container-№-p6 на v-team-card-->
-								<div class= "v-team__card">
-									<!--добавил картинкой-->
-									<img src="images/secondman.png" alt="Alexa">
-									<p class= "v-name-p6">
-										Alexa Biru
-									</p>
-									<p class= "v-workpos-p6">
-										Office Director
-									</p>
-								    <div class="team__icons">
-					                    <a href="#" class="team__icons-link">
-					                        <div class="facebook link__ico">
-					                            <i class="fa-brands fa-facebook-f fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="twitter link__ico">
-					                            <i class="fa-brands fa-twitter fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="message link__ico">
-					                            <i class="fa-solid fa-comments fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="dribble link__ico">
-					                            <i class="fa-brands fa-dribbble fa-xl"></i>
-					                        </div>
-					                    </a>
-					                </div>
-								</div>
-								<!--изменил класс v-container-№-p6 на v-team-card-->
-								<div class= "v-team__card">
-									<!--добавил картинкой-->
-									<img src="images/thirdman.png" alt="Ronobir">
-									<p class= "v-name-p6">
-										Ronobir Sing
-									</p>
-									<p class= "v-workpos-p6">
-										Admin
-									</p>
-									<div class="team__icons">
-					                    <a href="#" class="team__icons-link">
-					                        <div class="facebook link__ico">
-					                            <i class="fa-brands fa-facebook-f fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="twitter link__ico">
-					                            <i class="fa-brands fa-twitter fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="message link__ico">
-					                            <i class="fa-solid fa-comments fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="dribble link__ico">
-					                            <i class="fa-brands fa-dribbble fa-xl"></i>
-					                        </div>
-					                    </a>
-					                </div>
-								</div>
-							</div>
-							<div class="slide">
-								<!--изменил класс v-container-№-p6 на v-team-card-->
-								<div class= "v-team__card">
-									<!--добавил картинкой-->
-									<img src="images/Firstman.png" alt="John">
-									<p class= "v-name-p6">
-										John Doe
-									</p>
-									<p class= "v-workpos-p6">
-										General Manager
-									</p>
-									
-									<div class="team__icons">
-					                    <a href="#" class="team__icons-link">
-					                        <div class="facebook link__ico">
-					                            <i class="fa-brands fa-facebook-f fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="twitter link__ico">
-					                            <i class="fa-brands fa-twitter fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="message link__ico">
-					                            <i class="fa-solid fa-comments fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="dribble link__ico">
-					                            <i class="fa-brands fa-dribbble fa-xl"></i>
-					                        </div>
-					                    </a>
-					                </div>
-								</div>
-								<!--изменил класс v-container-№-p6 на v-team-card-->
-								<div class= "v-team__card">
-									<!--добавил картинкой-->
-									<img src="images/secondman.png" alt="Alexa">
-									<p class= "v-name-p6">
-										Alexa Biru
-									</p>
-									<p class= "v-workpos-p6">
-										Office Director
-									</p>
-								    <div class="team__icons">
-					                    <a href="#" class="team__icons-link">
-					                        <div class="facebook link__ico">
-					                            <i class="fa-brands fa-facebook-f fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="twitter link__ico">
-					                            <i class="fa-brands fa-twitter fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="message link__ico">
-					                            <i class="fa-solid fa-comments fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="dribble link__ico">
-					                            <i class="fa-brands fa-dribbble fa-xl"></i>
-					                        </div>
-					                    </a>
-					                </div>
-								</div>
-								<!--изменил класс v-container-№-p6 на v-team-card-->
-								<div class= "v-team__card">
-									<!--добавил картинкой-->
-									<img src="images/thirdman.png" alt="Ronobir">
-									<p class= "v-name-p6">
-										Ronobir Sing
-									</p>
-									<p class= "v-workpos-p6">
-										Admin
-									</p>
-									<div class="team__icons">
-					                    <a href="#" class="team__icons-link">
-					                        <div class="facebook link__ico">
-					                            <i class="fa-brands fa-facebook-f fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="twitter link__ico">
-					                            <i class="fa-brands fa-twitter fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="message link__ico">
-					                            <i class="fa-solid fa-comments fa-xl"></i>
-					                        </div>
-					                    </a>
-					                    <a href="#" class="team__icons-link">
-					                        <div class="dribble link__ico">
-					                            <i class="fa-brands fa-dribbble fa-xl"></i>
-					                        </div>
-					                    </a>
-					                </div>
-								</div>
-							</div>
-						</div>
 					</div>
+
+					<div class="slider-item">
+							<div class = "TeamMembersContainer">
+								<div class = "TeamMemberInfo">
+
+									<!-- Jhon Doe -->
+									<div class = "TeamMembersBox">
+										<img src="images/Firstman.png" alt="Jhon Doe">
+										<p class = "TeamMemberName">John Doe<p>
+										<p class = "TeamMemberPost">General Manager<p>
+										<div class = "TeamMembersIconContainer">
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-facebook-f fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-twitter fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-comments fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-globe fa-2x" aria-hidden="true"></i></div></a>
+										</div>
+									</div>
+
+									<!-- Alexa Biru -->
+									<div class = "TeamMembersBox">
+										<img src="images/secondman.png" alt="Alexa Biru">
+										<p class = "TeamMemberName">Alexa Biru<p>
+										<p class = "TeamMemberPost">Office Director<p>
+										<div class = "TeamMembersIconContainer">
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-facebook-f fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-twitter fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-comments fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-globe fa-2x" aria-hidden="true"></i></div></a>
+										</div>
+									</div>
+
+									<!-- Ronobir Sing -->
+									<div class = "TeamMembersBox">
+										<img src="images/thirdman.png" alt="Ronogir Sing">
+										<p class = "TeamMemberName">Ronogir Sing<p>
+										<p class = "TeamMemberPost">Admin<p>
+										<div class = "TeamMembersIconContainer">
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-facebook-f fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-twitter fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-comments fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-globe fa-2x" aria-hidden="true"></i></div></a>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+
+					<div class="slider-item">
+							<div class = "TeamMembersContainer">
+								<div class = "TeamMemberInfo">
+
+									<!-- Jhon Doe -->
+									<div class = "TeamMembersBox">
+										<img src="images/Firstman.png" alt="Jhon Doe">
+										<p class = "TeamMemberName">John Doe<p>
+										<p class = "TeamMemberPost">General Manager<p>
+										<div class = "TeamMembersIconContainer">
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-facebook-f fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-twitter fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-comments fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-globe fa-2x" aria-hidden="true"></i></div></a>
+										</div>
+									</div>
+
+									<!-- Alexa Biru -->
+									<div class = "TeamMembersBox">
+										<img src="images/secondman.png" alt="Alexa Biru">
+										<p class = "TeamMemberName">Alexa Biru<p>
+										<p class = "TeamMemberPost">Office Director<p>
+										<div class = "TeamMembersIconContainer">
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-facebook-f fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-twitter fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-comments fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-globe fa-2x" aria-hidden="true"></i></div></a>
+										</div>
+									</div>
+
+									<!-- Ronobir Sing -->
+									<div class = "TeamMembersBox">
+										<img src="images/thirdman.png" alt="Ronogir Sing">
+										<p class = "TeamMemberName">Ronogir Sing<p>
+										<p class = "TeamMemberPost">Admin<p>
+										<div class = "TeamMembersIconContainer">
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-facebook-f fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-brands fa-twitter fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-comments fa-2x" aria-hidden="true"></i></div></a>
+											<a href = "#OurTeamMembers-anchor"><div class = "TeamMembersIcon"><i class="fa-solid fa-globe fa-2x" aria-hidden="true"></i></div></a>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+
 				</div>
+				<div class="slider-dot-holder"> </div>
 			</div>
-			<div class= "v-circles-p6">
-				<p class = "v-circle-p6"></p>
-				<p class = "v-circle-p6"></p>
-				<p class = "v-circle-p6"></p>
-			</div>
-		</div>	
-	</article>
+		</div>
+
+	</section>
 
 	<!-- 7 page -->
 	<article>
@@ -765,32 +592,12 @@
 	</footer>
 
 	
-	<div id="pricing-modal-wrapper">
-        <div id="pricing-modal">
-			<div class="modal-header">
-				<h3>Order Now</h3>
-            	<span id="pricing-modal-close">&times;</span>
-			</div>
-            <form class="pricing-modal-form-wrapper">
-				<label for="pricename">Name</label>
-                <input type="text" onkeyup="check()" class="pricing-modal-field" id="pricename">
-                <label for="emailll">Email</label>
-				<input type="email" onkeyup="check()" class="pricing-modal-field" id="emailll">
-                <label for="pricephone">Phone</label>
-				<input type="text" onkeyup="check()" class="pricing-modal-field" id="pricephone">
-                <input type="submit" class="pricing-modal-btn" value="send" disabled id="modalSubmit">
-            </form>
-            <div id="order-accept">
-                <h3>Thank you!</h3>
-                <span>Your order has already been accepted.</span>
-            </div>
-        </div>
-    </div>
-
-
 	
-	<script src="ModalWindow.js"></script>
+
+
 	<script src="slider.js"></script>
+	<script src="ModalWindow.js"></script>
+	
 
 </body>
 </html>
