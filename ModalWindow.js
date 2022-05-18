@@ -47,8 +47,8 @@ function createWindow() {
     let pReg = document.createElement("p");
     pReg.appendChild(document.createTextNode("Registration"));
 
-    let divName = createInputBox('namebox', 'text', 'namebox', '', 'required', "Name: Kostya");
-    let divEmail = createInputBox('emailbox', 'text', 'emailbox', '', 'required', "Email: kostya@gmail.com");
+    let divName = createInputBox('namebox', 'text', 'namebox', '', 'required', "Name: Vasya");
+    let divEmail = createInputBox('emailbox', 'text', 'emailbox', '', 'required', "Email: vasya@gmail.com");
     let divPhone = createInputBox('phonebox', 'text', 'phonebox', '', 'required', "Phone: +375123456789");
     let divSend = createInputBox('sendbox', 'submit', 'modal-send', 'send', '', '');
 
