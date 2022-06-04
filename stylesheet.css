@@ -4,6 +4,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 /** ilia's part**/
+html { scroll-behavior: smooth;}
  a{
 	 color: #000;
 	 text-decoration: none;
@@ -42,7 +43,9 @@ body {
  .I-Banner{
 	height: 655px;
 	width: 1400px;
-	background-image: url("IliaImges/Banner.png");
+	background: url("images/x-slider-photo.jpg");
+	background-repeat: no-repeat;
+	background-size: 1400px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 
@@ -103,6 +106,7 @@ body {
 	text-align: center;
 	
 }
+
 .fa-angle-down:hover {
    text-decoration: underline;
 }
@@ -236,6 +240,17 @@ body {
     color: #fff;
 }
 
+.Boba{
+	width: 1400px;
+	height: 1000px;
+}
+.imgheader{
+	
+	text-align: center;
+}
+.x-main h2{
+	text-align: center;
+}
 
 
 
@@ -259,7 +274,7 @@ body {
 } 
 #services{
 	background-color: #e4fdf9;
-	height:1410px;
+	height:950px;
 }
 
 #workplace{
@@ -295,6 +310,7 @@ body {
 	height: 437px;
 	background-color: white;
 	margin: 0px 30px 30px 0px;
+	
 }
 
 
@@ -336,6 +352,18 @@ body {
 	margin-left: 110px;
 	font-size: 20px;
 	font-weight: 600;
+
+}
+.f-button-read {
+	display: block;
+	border: 2px solid black;
+	padding: 20px;
+	background: none;
+	margin-top: 20px;
+	margin-left: 110px;
+	font-size: 20px;
+	font-weight: 600;
+
 
 }
 .block:hover{
@@ -462,6 +490,72 @@ body {
 	background: #00897b;
 	color: white;
 	
+}
+footer{
+	margin-top: 150px;
+	width: 1400px;
+	height: 180px;
+	opacity: 0.8;
+	background-color: black;
+	box-shadow: 0px 3px 7px 0px rgba(11,12,12,0.14);
+}
+
+footer #main-string{
+	margin-top: 72px;
+	margin-left: 86px;
+	display: flex;
+	flex-direction: row;
+	height: 36px;
+
+	opacity: 0.5;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 12px;
+	line-height: 1.2;
+	font-weight: 300;
+	color: #fefefe;
+}
+
+
+footer #main-string a{
+	color: #fefefe;
+	text-decoration: none;	
+}
+
+footer #main-string a:hover{
+	color: rgba(255, 255, 255, 0.5);
+
+}
+
+footer .hrefs {
+	margin-left: 112px;
+	margin-top: 12px;
+}
+
+footer .copyrights{
+	letter-spacing: 0.025em;
+	margin-top: 12px;
+	margin-left: 128px;
+}
+
+footer .hrefs a+a{
+	margin-left: 12px;
+}
+
+footer #icons{
+	margin-top: 2px;
+	margin-left: 968px;
+}
+
+footer #icons a{
+	color: #555555;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+footer #icons a:hover{
+	font-weight: 800;
+	color: white;
 }
  
 
